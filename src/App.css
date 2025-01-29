@@ -6,6 +6,8 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 
 .recipe-card {
   border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
 
   margin-bottom: 10px;
   width: 20%;
