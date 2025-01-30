@@ -30,7 +30,7 @@ function RecipeCard({ recipe, addToBasket }) {
         <p>{recipe.description}</p>
         <Link to={`/recipe/${recipe.id}`}>View Details</Link>
       </article>
-      <button onClick={() => addToBasket(recipe)} style={{ marginLeft: "10px" }}>
+      <button onClick={() => addToBasket(recipe)}>
         Add to Basket
       </button>
     </div>

@@ -5,7 +5,7 @@ import RecipeCard from "./RecipeCard";
 function RecipeList({ recipes, addToBasket }) {
   return (
     <div>
-      <h2>Recipe List</h2>
+      <h2>All current recipes</h2>
       <Link to="/basket">Go to Basket</Link>
       <div className="recipe-list">
         {recipes.map((recipe) => (
