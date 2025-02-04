@@ -79,6 +79,7 @@ function App() {
 
   const addToBasket = (recipe) => {
     setBasket((prev) => [...prev, recipe]);
+    console.log(basket)
   };
 
   return (
@@ -88,11 +89,14 @@ function App() {
           <h1>Recipe Finder</h1>
         </header>
         <Routes>
-          <Route path="/" element={<RecipeList recipes={recipes} addToBasket={addToBasket} />} />
+          <Route path="/" element={<RecipeList recipes={recipes} addToBasket={addToBasket}  />} />
           <Route path="/add-recipe" element={<RecipeForm />} />
           <Route path="/recipe/:id" element={<RecipeDetails recipes={recipes} addToBasket={addToBasket} />} />
           <Route path="/basket" element={<Basket basket={basket} />} />
         </Routes>
+      </div>
+      <div>
+        test
       </div>
     </Router>
   );
